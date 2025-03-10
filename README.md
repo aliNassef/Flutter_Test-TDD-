@@ -174,10 +174,11 @@ flutter run
 ```
 
 ## 📱 Screenshots
-![screenshots\Screenshot 2025-03-10 043412.png](screenshots\Screenshot 2025-03-10 043412.png)
-(Screenshot 2025-03-10 043427.png)
-## 🧩 Design Pattern
-
+<p float="left">
++   <img src="screenshots/Screenshot 2025-03-10 043412.png" width="300" alt="Light Mode" />
++   <img src="screenshots\Screenshot 2025-03-10 043427.png" width="300" alt="Dark Mode" /> 
++ </p>
+ 
 ### BLoC/Cubit Pattern
 
 The application uses the BLoC/Cubit pattern for state management, where:
