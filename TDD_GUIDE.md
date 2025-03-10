@@ -128,32 +128,7 @@ test('getPosts should return a list of posts from the data source', () async {
 });
 ```
 
-### UI Layer
-
-For the UI layer, we can use widget tests to verify that the UI correctly displays the data and responds to user interactions:
-
-```dart
-testWidgets('PostsPage should display a list of posts when loaded', (WidgetTester tester) async {
-  // Arrange
-  final mockCubit = MockPostsCubit();
-  when(mockCubit.state).thenReturn(PostsLoaded(posts: testPosts));
-  
-  // Act
-  await tester.pumpWidget(
-    MaterialApp(
-      home: BlocProvider<PostsCubit>.value(
-        value: mockCubit,
-        child: PostsPage(),
-      ),
-    ),
-  );
-  
-  // Assert
-  expect(find.text('title 0'), findsOneWidget);
-  expect(find.text('title 1'), findsOneWidget);
-});
-```
-
+ 
 ## Best Practices for TDD in Flutter
 
 1. **Start with a failing test**: Always begin by writing a test that fails
@@ -172,10 +147,4 @@ testWidgets('PostsPage should display a list of posts when loaded', (WidgetTeste
 - **build_runner**: For generating mock classes
 - **equatable**: For easy comparison of objects in tests
 
-## Conclusion
-
-Test-Driven Development is a powerful approach to building high-quality Flutter applications. By writing tests first, you ensure that your code meets the requirements and is well-tested. This project demonstrates how to apply TDD principles in a real-world Flutter application, focusing on Clean Architecture and the BLoC/Cubit pattern.
-
-For more information, check out the [Flutter testing documentation](https://docs.flutter.dev/testing) and the resources listed in the README.md file.
-
-For a detailed guide on testing different layers of the application (Data Source, Repository, and Cubit), see the [Testing Layers Guide](TESTING_LAYERS.md). 
+ 
