@@ -174,9 +174,8 @@ flutter run
 ```
 
 ## 📱 Screenshots
-
-(Screenshots can be added here)
-
+(Screenshot 2025-03-10 043412.png)
+(Screenshot 2025-03-10 043427.png)
 ## 🧩 Design Pattern
 
 ### BLoC/Cubit Pattern
